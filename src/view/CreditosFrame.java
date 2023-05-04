@@ -41,6 +41,11 @@ public class CreditosFrame extends javax.swing.JFrame {
         btnCerrar.setText("X");
         btnCerrar.setContentAreaFilled(false);
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 0, 50, 50));
 
         lbCreditos.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -81,6 +86,11 @@ public class CreditosFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
+        //Se le asigno la acción de cerrar ventana
+         System.exit(0);
+    }//GEN-LAST:event_btnCerrarActionPerformed
 
     
     public static void main(String args[]) {

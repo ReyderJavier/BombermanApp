@@ -80,7 +80,8 @@ public class MenuFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPlayActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-        
+        //Le asigne la acción de cerrar ventana al boton
+         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnConfigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfigActionPerformed

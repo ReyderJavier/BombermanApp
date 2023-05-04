@@ -10,7 +10,7 @@
  */
 package view;
 
-import view.MenuFrame;
+
 import java.awt.event.KeyEvent;
 
 public class BienvenidaFrame extends javax.swing.JFrame {
@@ -59,9 +59,7 @@ public class BienvenidaFrame extends javax.swing.JFrame {
         //Verificar si la tecla presionada es la tecla de espacio
         if(keyCode == KeyEvent.VK_SPACE) {
         
-            //Crear un nuevo JFrame y hacerlo visible
             
-        
             //Ocultar el JFrame actual
             this.setVisible(false);
         }

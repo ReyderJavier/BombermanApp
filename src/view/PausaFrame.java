@@ -71,6 +71,11 @@ public class PausaFrame extends javax.swing.JFrame {
         btnMenu.setText("Menu");
         btnMenu.setContentAreaFilled(false);
         btnMenu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenuActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 130, 50));
 
         lbFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pausa.png"))); // NOI18N
@@ -95,6 +100,15 @@ public class PausaFrame extends javax.swing.JFrame {
         // Hacemos visible esta nueva ventana
         win.setVisible(true);
     }//GEN-LAST:event_btnOpcionesMouseClicked
+
+    private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
+        // instanciamos la nueva ventana
+        MenuFrame win = new MenuFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+        
+        this.dispose();
+    }//GEN-LAST:event_btnMenuActionPerformed
 
 
     public static void main(String args[]) {

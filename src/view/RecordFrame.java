@@ -6,22 +6,18 @@
 *              ventana de Records del * 
 *              proyecto del Bomberman * 
 **************************************/
-
 package view;
 
-public class RecordsFrame extends javax.swing.JFrame {
+public class RecordFrame extends javax.swing.JFrame {
 
-    public RecordsFrame() {
+    public RecordFrame() {
         initComponents();
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         pnlPanle1 = new javax.swing.JPanel();
         lbPrimero = new javax.swing.JLabel();
@@ -38,24 +34,11 @@ public class RecordsFrame extends javax.swing.JFrame {
         pnlPanel5 = new javax.swing.JPanel();
         lbQuinto = new javax.swing.JLabel();
         lbQuinto5 = new javax.swing.JLabel();
-        lbRecords = new javax.swing.JLabel();
-
-        jTextField1.setText("jTextField1");
+        btnSalir = new javax.swing.JLabel();
+        lbFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setEnabled(false);
-        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Botonrec.png"))); // NOI18N
-        jButton1.setText("Salir");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 110, 30));
 
         jLayeredPane1.setAutoscrolls(true);
         jLayeredPane1.setLayout(new java.awt.FlowLayout());
@@ -215,46 +198,53 @@ public class RecordsFrame extends javax.swing.JFrame {
 
         jLayeredPane1.add(pnlPanel5);
 
-        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 330, 290));
+        getContentPane().add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 600, 290));
 
-        lbRecords.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Record.png"))); // NOI18N
-        getContentPane().add(lbRecords, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 800, 680));
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Botonrec.png"))); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSalir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSalirMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        lbFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Record.png"))); // NOI18N
+        getContentPane().add(lbFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
         // instanciamos la nueva ventana
         MenuFrame win = new MenuFrame();
         // Hacemos visible esta nueva ventana
         win.setVisible(true);
         
-        //Ocultar el JFrame actual
+        // Ocultamos la ventana actual
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnSalirMouseClicked
 
-   
     public static void main(String args[]) {
-     
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new RecordsFrame().setVisible(true);
+                new RecordFrame().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel btnSalir;
     private javax.swing.JLayeredPane jLayeredPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lbCuarto4;
     private javax.swing.JLabel lbCuatro;
+    private javax.swing.JLabel lbFondo;
     private javax.swing.JLabel lbPrimero;
     private javax.swing.JLabel lbPrimero1;
     private javax.swing.JLabel lbQuinto;
     private javax.swing.JLabel lbQuinto5;
-    private javax.swing.JLabel lbRecords;
     private javax.swing.JLabel lbSegundo;
     private javax.swing.JLabel lbSegundo2;
     private javax.swing.JLabel lbTercero;

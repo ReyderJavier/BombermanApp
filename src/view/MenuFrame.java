@@ -100,7 +100,7 @@ public class MenuFrame extends javax.swing.JFrame {
 
     private void btnRecordsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRecordsActionPerformed
         // instanciamos la nueva ventana
-        RecordsFrame win = new RecordsFrame();
+        RecordFrame win = new RecordFrame();
         // Hacemos visible esta nueva ventana
         win.setVisible(true);
         

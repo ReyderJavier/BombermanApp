@@ -1,6 +1,12 @@
+/************************************************
+  * Autores: Cristopher                         *
+  * Fecha de creación: 2 de mayo                *
+  * Fecha de modificación:3 de mayo             *
+  * Descripción: Fue creado la pantalla de juego*
+ ************************************************/
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java 
  */
 package view;
 

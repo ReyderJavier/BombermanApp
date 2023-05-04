@@ -1,13 +1,9 @@
 /************************************************
-  * Autores: Reyder                             * 
-  * Fecha de creación: 2 de mayo                *
-  * Fecha de modificación:3 de mayo             *
+  * Autores: Cristopher Alexis Zarate Valencia  *
+  * Fecha de creación: 2/05/2023                *
+  * Fecha de modificación: 3/05/2023             *
   * Descripción: Fue creado el frame de formulario*
  ************************************************/
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java 
- */
 package view;
 
 public class FormularioFrame extends javax.swing.JFrame {
@@ -84,7 +80,8 @@ public class FormularioFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_psContraseñaActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        
+        // Le asignamos la acción de cerrar la ventana, pero ademas de eso debe de guardar la info con la que se rellenó
+         System.exit(0);
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed

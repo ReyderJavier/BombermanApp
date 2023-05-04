@@ -1,13 +1,10 @@
 /************************************************
-  * Autores: Cristopher                         *
-  * Fecha de creación: 2 de mayo                *
-  * Fecha de modificación:3 de mayo             *
+  * Autores: Cristopher Alexis Zarate Valencia  *
+  * Fecha de creación: 2/05/2023                *
+  * Fecha de modificación:3/05/2023             *
   * Descripción: Fue creado el frame de pausa   *
  ************************************************/
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java 
- */
+
 package view;
 
 
@@ -38,6 +35,11 @@ public class PausaFrame extends javax.swing.JFrame {
         btnCerrar.setText("X");
         btnCerrar.setContentAreaFilled(false);
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 60, 50));
 
         btnContinuar.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
@@ -45,6 +47,11 @@ public class PausaFrame extends javax.swing.JFrame {
         btnContinuar.setText("Continuar");
         btnContinuar.setContentAreaFilled(false);
         btnContinuar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnContinuar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnContinuarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnContinuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 78, 130, 50));
 
         btnOpciones.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
@@ -67,6 +74,15 @@ public class PausaFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
+        // Le asignamos la acción de cerrar la ventana
+         System.exit(0);
+    }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnContinuarActionPerformed
 
 
     public static void main(String args[]) {

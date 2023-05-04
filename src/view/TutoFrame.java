@@ -1,13 +1,9 @@
 /************************************************
-  * Autores: Reyder                             *
-  * Fecha de creación: 2 de mayo                *
-  * Fecha de modificación:3 de mayo             *
+  * Autores: Elio Justino Cruz Ortega           *
+  * Fecha de creación: 2/05/2023                *
+  * Fecha de modificación: 3/05/2023            *
   * Descripción: Fue creado el frame del tutorial*
  ************************************************/
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java 
- */
 package view;
 
 public class TutoFrame extends javax.swing.JFrame {

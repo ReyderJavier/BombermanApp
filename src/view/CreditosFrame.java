@@ -1,13 +1,9 @@
 /************************************************
-  * Autores: Cristopher                         *
-  * Fecha de creación: 2 de mayo                *
-  * Fecha de modificación:3 de mayo             *
-  * Descripción: Fue creado el fram de creditos *
+  * Autores: Cristopher Alexis Zarate Valencia  *
+  * Fecha de creación: 2/05/2023                *
+  * Fecha de modificación: 3/05/2023             *
+  * Descripción: Fue creado el frame de creditos*
  ************************************************/
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java 
- */
 package view;
 
 

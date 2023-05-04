@@ -1,13 +1,10 @@
 /************************************************
-  * Autores: Reyder                             *
-  * Fecha de creación: 2 de mayo                *
-  * Fecha de modificación:3 de mayo             *
+  * Autores: Reyder Javier Tineo Tineo          *
+  * Fecha de creación: 2/05/2023                *
+  * Fecha de modificación: 3/05/2023            *
   * Descripción: Se creo el Frame de bienvenida *
  ************************************************/
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java 
- */
+
 package view;
 
 

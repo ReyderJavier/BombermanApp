@@ -1,8 +1,8 @@
 /************************************************
-  * Autores: Cristopher                         *
-  * Fecha de creación: 2 de mayo                *
-  * Fecha de modificación:3 de mayo             *
-  * Descripción: Fue creado la pantalla de juego*
+  * Autores: Cristopher Alexis Zarate Valencia  *
+  * Fecha de creación: 2/05/2023                *
+  * Fecha de modificación:3/05/2023             *
+  * Descripción: Fue creado el frame del Nivel  *
  ************************************************/
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 

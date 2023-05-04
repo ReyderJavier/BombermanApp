@@ -1,13 +1,10 @@
 /************************************************
-  * Autores: Cristopher                         *
-  * Fecha de creación: 2 de mayo                *
-  * Fecha de modificación:3 de mayo             *
+  * Autores: Cristopher Alexis Zarate Valencia  *
+  * Fecha de creación: 2/05/2023                *
+  * Fecha de modificación:3/05/2023             *
   * Descripción: Fue creado el frame de opciones*
  ************************************************/
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt 
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java 
- */
+
 package view;
 
 
@@ -40,7 +37,12 @@ public class OpcionesFrame extends javax.swing.JFrame {
         btnCerrar.setText("X");
         btnCerrar.setContentAreaFilled(false);
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(342, 0, 50, 50));
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 0, 50, 50));
 
         btnSoundtrack.setForeground(new java.awt.Color(51, 51, 51));
         btnSoundtrack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
@@ -65,11 +67,18 @@ public class OpcionesFrame extends javax.swing.JFrame {
 
         lbFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/creditos_opciones.png"))); // NOI18N
         lbFondo.setText("jLabel1");
+        lbFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lbFondo.setVerifyInputWhenFocusTarget(false);
         getContentPane().add(lbFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
+        // Le asignamos la acción de cerrar la ventana
+         System.exit(0);
+    }//GEN-LAST:event_btnCerrarActionPerformed
 
     
     public static void main(String args[]) {

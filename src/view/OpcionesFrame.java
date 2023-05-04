@@ -49,21 +49,26 @@ public class OpcionesFrame extends javax.swing.JFrame {
         btnSoundtrack.setText("Soundtrack: On");
         btnSoundtrack.setContentAreaFilled(false);
         btnSoundtrack.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(btnSoundtrack, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 140, 30));
+        getContentPane().add(btnSoundtrack, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 150, 30));
 
         btnSfx.setForeground(new java.awt.Color(51, 51, 51));
         btnSfx.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnSfx.setText("SFX: On");
         btnSfx.setContentAreaFilled(false);
         btnSfx.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(btnSfx, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 110, 30));
+        getContentPane().add(btnSfx, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 110, 30));
 
         btnCreditos.setForeground(new java.awt.Color(51, 51, 51));
         btnCreditos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
         btnCreditos.setText("Creditos");
         btnCreditos.setContentAreaFilled(false);
         btnCreditos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(btnCreditos, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 110, 30));
+        btnCreditos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCreditosMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnCreditos, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 110, 30));
 
         lbFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/creditos_opciones.png"))); // NOI18N
         lbFondo.setText("jLabel1");
@@ -76,9 +81,19 @@ public class OpcionesFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
-        // Le asignamos la acción de cerrar la ventana
-         System.exit(0);
+        //Ocultar el JFrame actual
+        this.dispose();
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnCreditosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCreditosMouseClicked
+        // instanciamos la nueva ventana
+        CreditosFrame win = new CreditosFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+
+        //Ocultar el JFrame actual
+        this.dispose();
+    }//GEN-LAST:event_btnCreditosMouseClicked
 
     
     public static void main(String args[]) {

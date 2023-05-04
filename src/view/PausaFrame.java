@@ -59,6 +59,11 @@ public class PausaFrame extends javax.swing.JFrame {
         btnOpciones.setText("Opciones");
         btnOpciones.setContentAreaFilled(false);
         btnOpciones.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnOpciones.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnOpcionesMouseClicked(evt);
+            }
+        });
         getContentPane().add(btnOpciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 130, 50));
 
         btnMenu.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
@@ -77,12 +82,19 @@ public class PausaFrame extends javax.swing.JFrame {
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         // Le asignamos la acción de cerrar la ventana
-         System.exit(0);
+        this.dispose();
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnContinuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContinuarActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_btnContinuarActionPerformed
+
+    private void btnOpcionesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOpcionesMouseClicked
+        // instanciamos la nueva ventana
+        OpcionesFrame win = new OpcionesFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+    }//GEN-LAST:event_btnOpcionesMouseClicked
 
 
     public static void main(String args[]) {

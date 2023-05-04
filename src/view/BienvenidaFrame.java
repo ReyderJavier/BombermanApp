@@ -49,16 +49,16 @@ public class BienvenidaFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
-                              
-        //Obtener el código de la tecla presionada
-        int keyCode = evt.getKeyCode();
-    
         //Verificar si la tecla presionada es la tecla de espacio
-        if(keyCode == KeyEvent.VK_SPACE) {
-        
+        if(evt.getKeyCode() == KeyEvent.VK_SPACE) {
+            // instanciamos la nueva ventana
+            MenuFrame win = new MenuFrame();
+            // Hacemos visible esta nueva ventana
+            win.setVisible(true);
             
             //Ocultar el JFrame actual
-            this.setVisible(false);
+            this.dispose();
+            
         }
      //Aquí se le asigno la función de siguiente a la tecla ESPACIO  
     }//GEN-LAST:event_formKeyPressed

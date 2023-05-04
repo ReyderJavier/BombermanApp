@@ -38,7 +38,7 @@ public class NivelFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnPausa = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lbVidas = new javax.swing.JLabel();
@@ -64,11 +64,16 @@ public class NivelFrame extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 85, -1, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
-        jButton1.setText("Pausa");
-        jButton1.setContentAreaFilled(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, -1));
+        btnPausa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonRec.png"))); // NOI18N
+        btnPausa.setText("Pausa");
+        btnPausa.setContentAreaFilled(false);
+        btnPausa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnPausa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPausaMouseClicked(evt);
+            }
+        });
+        getContentPane().add(btnPausa, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, -1));
 
         jLabel1.setText("Tiempo: 00:00");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 9, -1, -1));
@@ -85,6 +90,16 @@ public class NivelFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPausaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPausaMouseClicked
+        // instanciamos la nueva ventana
+        PausaFrame win = new PausaFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+
+        //Ocultar el JFrame actual
+        this.dispose();
+    }//GEN-LAST:event_btnPausaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -122,7 +137,7 @@ public class NivelFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnPausa;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

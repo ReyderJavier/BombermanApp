@@ -80,13 +80,23 @@ public class FormularioFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_psContraseñaActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        // Le asignamos la acción de cerrar la ventana, pero ademas de eso debe de guardar la info con la que se rellenó
-         System.exit(0);
+        // instanciamos la nueva ventana
+        TutoFrame win = new TutoFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+
+        //Ocultar el JFrame actual
+        this.dispose();
     }//GEN-LAST:event_btnAceptarActionPerformed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-        // Le asignamos la acción de cerrar la ventana
-         System.exit(0);
+        // instanciamos la nueva ventana
+        MenuFrame win = new MenuFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+            
+        //Ocultar el JFrame actual
+        this.dispose();
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     

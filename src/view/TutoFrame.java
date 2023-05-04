@@ -18,6 +18,7 @@ public class TutoFrame extends javax.swing.JFrame {
 
         pnlTuto = new javax.swing.JPanel();
         lbComoSeJuega = new javax.swing.JLabel();
+        btnOmitir = new javax.swing.JButton();
         btnSiguiente = new javax.swing.JButton();
         btnAtras = new javax.swing.JButton();
         lbFondo = new javax.swing.JLabel();
@@ -41,6 +42,17 @@ public class TutoFrame extends javax.swing.JFrame {
 
         lbComoSeJuega.setText("¿CÒMO SE JUEGA?");
         getContentPane().add(lbComoSeJuega, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+
+        btnOmitir.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
+        btnOmitir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonrec.png"))); // NOI18N
+        btnOmitir.setText("OMITIR");
+        btnOmitir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnOmitir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOmitirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnOmitir, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 90, 20));
 
         btnSiguiente.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
         btnSiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/botonrec.png"))); // NOI18N
@@ -75,6 +87,16 @@ public class TutoFrame extends javax.swing.JFrame {
       
     }//GEN-LAST:event_btnAtrasActionPerformed
 
+    private void btnOmitirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOmitirActionPerformed
+        // instanciamos la nueva ventana
+        NivelesFrame win = new NivelesFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+
+        //Ocultar el JFrame actual
+        this.dispose();
+    }//GEN-LAST:event_btnOmitirActionPerformed
+
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
         
     }//GEN-LAST:event_btnSiguienteActionPerformed
@@ -90,6 +112,7 @@ public class TutoFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAtras;
+    private javax.swing.JButton btnOmitir;
     private javax.swing.JButton btnSiguiente;
     private javax.swing.JLabel lbComoSeJuega;
     private javax.swing.JLabel lbFondo;

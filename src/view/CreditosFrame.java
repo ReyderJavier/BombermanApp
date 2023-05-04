@@ -84,8 +84,7 @@ public class CreditosFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
-        //Se le asigno la acción de cerrar ventana
-         System.exit(0);
+        this.dispose();
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     

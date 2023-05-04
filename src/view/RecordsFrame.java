@@ -21,7 +21,6 @@ public class RecordsFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         pnlPanle1 = new javax.swing.JPanel();
@@ -48,11 +47,14 @@ public class RecordsFrame extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jLabel3.setText("Records");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 70, 20));
-
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Botonrec.png"))); // NOI18N
+        jButton1.setText("Salir");
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 110, 30));
 
         jLayeredPane1.setAutoscrolls(true);
@@ -222,6 +224,16 @@ public class RecordsFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // instanciamos la nueva ventana
+        MenuFrame win = new MenuFrame();
+        // Hacemos visible esta nueva ventana
+        win.setVisible(true);
+        
+        //Ocultar el JFrame actual
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
    
     public static void main(String args[]) {
      
@@ -234,7 +246,6 @@ public class RecordsFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lbCuarto4;

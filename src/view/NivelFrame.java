@@ -96,9 +96,6 @@ public class NivelFrame extends javax.swing.JFrame {
         PausaFrame win = new PausaFrame();
         // Hacemos visible esta nueva ventana
         win.setVisible(true);
-
-        //Ocultar el JFrame actual
-        this.dispose();
     }//GEN-LAST:event_btnPausaMouseClicked
 
     /**
